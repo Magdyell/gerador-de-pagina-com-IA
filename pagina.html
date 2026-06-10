@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerador de Páginas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="titulo">Gerador de páginas com IA</p>
+
+    <h1>
+        Crie sua página
+        <br>
+        <span>com um prompt</span>
+    </h1>
+
+    <p class="subtitulo">
+        Descreva o que você quer que sua página contenha:
+    </p>
+
+    <div class="caixa-entrada">
+        <textarea
+            id="prompt"
+            placeholder="Descreva sua página..."
+        ></textarea>
+
+        <button onclick="gerarPagina()">
+            Gerar Página
+        </button>
+    </div>
+
+    <div class="caixa-resultado">
+
+        <pre id="codigo" class="bloco-codigo">
+HTML Gerado aparecerá aqui...
+        </pre>
+
+        <iframe
+            id="resultado"
+            class="resultado"
+        ></iframe>
+
+    </div>
+
+    <div class="contato">
+        <p>
+            Desenvolvido por
+            <a href="https://www.linkedin.com/in/magdyel-oliveira-956b00364/" target="_blank">
+                Magdyel Oliveira
+            </a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
